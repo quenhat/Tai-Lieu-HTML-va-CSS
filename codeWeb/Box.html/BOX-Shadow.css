@@ -1,0 +1,17 @@
+#box-shadow{
+    box-shadow: -10px -20px 30px red; /* -10px : trái, -20px : trên, 10px độ nhoè*/
+    background-color: black;
+    color: white;
+}
+/* Box-shadow: x y z c;
+   x: độ lệch ngang âm thì bên trái , dương thì bên phải
+   y: độ lệch đững âm thì bên trên , dương thì bên dưới
+   z: độ nhoè màu của bóng đổ (đơn vị đo) càng lớn càng nhoè
+   c: màu bóng đổ
+*/
+#box-shadow1{
+    box-shadow: 10px 20px 80px red; /* 10px : phải, 20px : dưới, 80px độ nhoè*/
+    background-color: black;
+    color: white;
+    margin-top: 100px;
+}

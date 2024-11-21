@@ -1,0 +1,19 @@
+p:first-child{   /*p:first-child : chọn mọi thẻ <p> mà bản thân nó là thẻ con đầu tiên của thẻ cha */
+    color: red;
+}
+p:last-child{
+    color: blue;
+}
+p:nth-last-child(2) {
+    color: blueviolet;
+}
+span::before{
+    content: "";
+    display: inline-block;
+    background-color: blue;
+    height: 20px;
+    width: 20px;
+}
+span::after{
+    content: "...!";
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Đường dẫn tuyệt đối là đường dẫn chính xác từ GỐC tới ĐÍCH
+     VD: d:\vidu1\index1.html ( VÌ NÓ CÓ Ổ GỐC LÀ d VÀ FILE ĐÍCH LÀ index1)
+    --> 
+    <!-- Đường dẫn tương dối 
+     VD: .\vidu1\index1.html ( vì nó không có ổ gốc)
+    -->
+     <!--Table : bảng-->
+     <table border="1" cellpadding="10px" cellspacing="0" >
+        <!-- Cellpadding: là khoảng cách từ đường line đến content-->
+         <!-- Cellspacing : là độ dày của đường biên-->
+        <p>Đây là table bình thường</p>
+        <tr>
+            <td>Hàng 1 cột 1</td>
+            <td>Hàng 1 cột 2</td>
+            <td>Hàng 1 cột 3</td>
+        </tr>
+        <tr>
+            <td>Hàng 2 cột 1</td>
+            <td>Hàng 2 cột 2</td>
+            <td>Hàng 2 cột 3</td>
+        </tr>
+     </table>
+     <strong>Đây là table trộn cột</strong>
+     <table border="1" cellpadding="10px" cellspacing="0">
+        <tr>
+            <td colspan="2">Hàng 1 cột 1</td><!--colspan=2 tương ứng với 2 cột + hàng 1 cột 2 tổng là 3 cột -->
+            <td>Hàng 2 cột 2</td>
+        </tr>
+        <td>Hàng 2 cột 1</td>
+        <td>Hàng 2 cột 2</td>
+        <td>Hàng 2 cột 3</td>
+        </table>
+
+        <b>Đây là TABLE trộn hàng</b>
+        <table border="1" cellpadding="10px" cellspacing="0">\ 
+        <tr>
+            <td rowspan="2">Hàng 3 cột 1</td><!--rowspan-2 tương ứng với 2 dòng + 1 hàng - 1 cột 
+            VD: đang có 3 cột mà hàng 4 chỉ có 2 cột , vì hàng 3 cột 1 chiếm mất nên là -1 cột ,
+             thay vào đó hàng 3 được + 1 hàng-->
+            <td>Hàng 3 cột 2</td>
+            <td>Hàng 3 cột 3</td>
+
+        </tr>
+        <td>Hàng4 cột1</td>
+        <td>Hàng 4 cột 2</td>
+    
+       
+     </table>
+     <form>
+        <input type="text"/> <br/>
+        <input type="checkbox"/> <br/>
+        <input type="radio"/> <br/>
+        <select>
+            <option>Gia tri 1</option>
+            <option>Gia tri 2</option> 
+            <option>Gia tri 3</option>
+            <textarea></textarea>
+        </select>
+    </form>
+     
+</body>
+</html>

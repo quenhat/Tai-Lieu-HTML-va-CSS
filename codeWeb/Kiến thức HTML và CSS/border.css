@@ -1,0 +1,66 @@
+#border1{
+    text-align: center;
+    font-size: xx-large;
+    background-color: aqua;
+    border: solid yellow 5px;
+    width: 100px;
+    height: 100px;
+    border-top-color: blue;
+    border-left-color: black;
+     /*cmt: dùng để chỉ định màu cho đường viền bên trên
+            tương tự như , left , rigt and bottom */
+    border-left-style: dotted;
+     /*cmt: dùng để chỉ định loại nét cho đường viền bên trên
+            tương tự như , left , rigt and bottom */  
+    border-radius: 100px;
+     /*cmt: border-radiou ( thực hiện bẻ cong đường viền tại 4 góc nhọn của khối và đi theo kim đồng hồ)
+            1 giá trị : áp dụng cho cả 4 góc   ( border1 )
+            2 giá trị : tương ứng với góc trái trên + góc phảidưới , góc trái dưới + góc phải trên(border4)
+            3 giá trị : tương ứng với góc trái trên, phải trên + trái dưới, phải dưới (border2)
+            4 giá trị : tương ứng với góc trái trên 20, phải trên40 , phải dưới 60, trái dưới 80  (border3)
+            *Luu y: Muốn tạo hình trọn thì width và height phải bằng nhau vd : width 200px , height 200px
+                  : thì đường kính bằng cạnh của hình vuông vd:   width 200px , height 200px thì border-radiou cũng phải là 200px
+     */        
+}
+.border2{
+     text-align: center;
+    font-size: xx-large;
+    background-color: aqua;
+    border: solid yellow 5px;
+    width: 200px;
+    height: 200px;
+    border-top-color: blue;
+    border-left-color: black;
+    position: relative;
+    left: 300px;
+    top: 100px;
+    border-radius: 30px 50px 70px;
+    
+
+}        
+#border3{
+    text-align: center;
+    font-size: xx-large;
+    background-color: aqua;
+    border: solid yellow 5px;
+    width: 300px;
+    height: 200px;
+    border-top-color: blue;
+    border-left-color: black;
+    position: relative;
+    left:700px;
+    border-radius: 20px 40px 60px 80px;
+}   
+#border4{
+     text-align: center;
+    font-size: xx-large;
+    background-color: aqua;
+    border: solid yellow 5px;
+    width: 300px;
+    height: 200px;
+    border-top-color: blue;
+    border-left-color: black;
+    position: relative;
+    right: -100px;
+    border-radius: 20px 50px;
+}

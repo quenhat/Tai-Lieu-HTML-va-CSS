@@ -1,0 +1,14 @@
+#margin{
+    border: solid 2px orange;
+    padding: 50px;
+    margin: 0px auto; /*dùng căn giữa 1 nội dung + max width*/
+    max-width: 960px;
+    margin-bottom: 50px;
+    box-sizing: border-box; /* padding càng cao thì nội dung càng thu vào*/
+}
+#margin2{
+    border: solid 2px orange;
+    padding: 20px;
+    margin: 0px auto; /*dùng căn giữa 1 nội dung + max width*/
+    max-width: 960px;
+}

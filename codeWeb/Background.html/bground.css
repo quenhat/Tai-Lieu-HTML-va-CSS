@@ -1,0 +1,33 @@
+body{
+    background-image: url('./mac_air_m1_800x450.jpg');
+    background-repeat: repeat;
+     /*cmt
+     no repeat: không lặp lại ảnh nền
+     repeat-x : ảnh nền lặp lại theo chiều ngang                
+     repeat-y : ảnh nền lặp lại theo chiều dọc (đứng)
+     repeat   : ảnh nền lặp lại theo cả 2 chiều ( mặc định )
+     inherit  : Kế thừa lại từ HTML cha của thẻ HTML 
+    */
+    background-attachment: scroll;
+    /* cmt:
+     scroll : Ảnh nền sẽ scroll theo thẻ HTML ( thường là mặc định )
+     fixed  : Ảnh nền bị cố định và không scroll theo nội dung 
+     local  : Ảnh nền sẽ bị scroll theo nội dung
+     inherit  : Kế thừa lại từ HTML cha của thẻ HTML 
+    */
+    background-position: 10px ;/*50px 80px*/  /* 50px (cách viền bên trái 50px) 80px ( cách viền từ bên trên 80px) */
+    background-size: cover;
+    /*cmt: 
+     width , height : cặp số chỉ định chiều rộng và cao của ảnh nền (px)
+     contain        : càng lớn càng tốt và phải đảm bảo đủ nhìn ảnh
+     cover          : càng lớn càng tốt và phải đảm bảo đủ hết nội dung
+    */  
+}
+#div1{
+    background-color: aqua;
+    width: 200px;
+    height: 700px;
+    position: relative;
+    left: 1000px;
+
+}

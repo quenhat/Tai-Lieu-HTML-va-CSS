@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #div1{
+            background-color: orangered;
+            position: absolute;
+            left: 50px;
+            top: 50px;
+            width: 300px;
+            height: 300px;
+            z-index: 1;
+            top: 200px;
+        }
+        #div2{
+            background-color: aqua;
+            position: absolute;
+            left: 90px;
+            top: 90px;
+            width: 300px;
+            height: 300px;
+            z-index: 2;
+            opacity: 0.5;
+            top: 200px;
+        }
+        p span{
+            font-weight: bolder;
+            display: block;
+        }
+        #span1{
+            font-weight: bolder;
+            background-color: aqua;
+            display: inline-block;
+            padding: 20px;
+        }
+        nav a{
+            background-color: aqua;
+            padding: 10px 20px;
+            display: inline-block;
+            text-decoration: none;
+            color: white;
+        }
+        nav a:hover{
+            background-color: black; 
+        }
+    </style>
+</head>
+<body>
+    <div id="div1"></div>
+    <div id="div2"></div>
+    <p>
+        <span>ĐÂY LÀ VĂN BẢN MỚI</span> <!-- p span ( trong thẻ p tìm thẻ span) và lệnh display block thì dòng văn bản chiếm luôn 1 line-->
+        đây là văn bản cũ
+        đây là văn bản cũ
+        đây là văn bản cũ
+        đây là văn bản cũ
+        đây là văn bản cũ
+        đây là văn bản cũ
+        đây là văn bản cũ
+    </p>
+    <p>
+        đây là văn bản cũ
+        đây là văn bản cũ
+        đây là văn bản cũ
+        đây là văn bản cũ
+        đây là văn bản cũ
+        <span id="span1">ĐÂY LÀ PHẦN HIỂN THỊ DISPLAY INLINE-BLOCK</span>
+        <!--Display inline-block : nếu đủ độ dài thì nó vẫn cùng trên 1 hàng ,
+                                   nếu không đủ độ dài thì nó sẽ xuống hàng-->
+        đây là văn bản cũ
+        đây là văn bản cũ  
+        đây là văn bản cũ
+        đây là văn bản cũ
+        đây là văn bản cũ
+        đây là văn bản cũ
+        đây là văn bản cũ 
+    </p>
+    <!--Phân biệt display inline , block , inline-block
+        1: Inline 
+        - các phần tử có display inline  nằm cạnh nhau sẽ hiển thị trên 1 hàng ngang
+        - không thể tác động vào padding top bottom của phần tử
+        - thẻ mặc định inline : a , span , b , i , img....
+        2: Block
+        - các phần tử có display block sẽ chiếm không gian và nằm 1 mình 1 hàng
+        - có thể tác động vào padding top right bottom left cuả phần tử
+        - thẻ mặc định : div, h1-6, p, section, nav,....
+        3: inline-block 
+        - nếu đủ độ dài thì nó vẫn cùng trên 1 hàng ,
+        - nếu không đủ độ dài thì nó sẽ xuống hàng
+        - có thể tác động vào padding  top right bottom left cuả phần tử
+        -->
+        <nav>
+            <a href="">Trang chủ</a>
+            <a href="">Giới thiệu</a>
+        </nav>
+        <!-- nav a:hover{
+                background color black : khi nền link a đang là aqua ta di chuột vào ô link nó sẽ đổi màu thành đen  
+        }-->
+
+   
+    
+</body>
+</html>

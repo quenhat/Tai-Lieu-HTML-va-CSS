@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Transform.css">
+    <title>trasform</title>
+</head>
+<body>
+    <!--Transform : thuộc tính cho phép các bạn co thể dịch chuyển , xoay chiều, làm nghiêng, vvv
+         + các hàng transform  *KHÔNG PHẢI* hàm animation, cho nên cần kết hợp với transition để tạo thành animation
+         - Tranform 2D 
+         1: TranslateX(x) : dịch chuyển toạ độ x theo hàng ngang 
+         . x dương thì dịch chuyển sang phải, x âm thì dịch chuyển sang trái
+         2: TranslateY(y) : dịch chuyển toạ độ y theo chiều đứng 
+         . y dương thì dịch chuyển  xuống dưới, x âm thì dịch chuyển lên trên
+         3: Hàm Rotate (deg) : xoay phần tử theo 1 góc được tính bằng đơn vị độ
+         4: Hàm scaleX(x) ,Y(y) : X tăng giảm đọ rộng của phần tử, Y tăng giảm đọ cao của phần tử 
+         5: Skew X, Y : X làm xoay nghiêng 2 cạnh trái phải , Y làm xoay nghiêng 2 cạnh trên dưới
+         6: Hàm matrix(1,2,3,4,5,6) : 1 scaleX 2 skewY 3 skewX 4 scaleY 5 tránlateX 6 tránlateY 
+         - Transform 3D 
+         1: Hàm rotate X Y Z: theo đơn vị độ
+         2: Hàm rotatr 3D: 
+         -->
+         <h2>Transform : translate</h2>
+         <div id="transform-translate">
+            translate
+         </div><br><br>
+         <h2>Transform : rotate</h2>
+         <div id="transform-rotate">
+            Rotate
+         </div>
+         <h2>Transform : Scale</h2>
+         <div id="transform-scale">
+            Scale
+         </div>
+         <h2>Transform : Skew</h2>
+         <div id="transform-skew">
+            Skew
+         </div>
+</body>
+</html>

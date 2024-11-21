@@ -1,0 +1,27 @@
+body{
+    font-size: large;
+}
+table{
+    width: 400px;
+}
+table, th, td{
+    border-bottom:1px solid rgb(247, 246, 246) ;
+    border-collapse: collapse; /* border-collapse; collapse không lặp lại đường viền table*/
+}
+td, th{
+    padding: 6px 10px;
+}
+th{
+    text-align: left;
+}
+.table.table-black{
+    background: black;
+    color: white;
+}
+.table.table-hover tbody tr:hover{
+    background-color: gray;
+}
+.table.table-striped tbody tr:nth-child(odd) {
+    background: gray;
+    /*tr:nth-child(odd) : odd ( theo vị trí số lẻ )*/
+}

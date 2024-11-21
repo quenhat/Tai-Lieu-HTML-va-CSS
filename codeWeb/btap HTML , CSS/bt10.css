@@ -1,0 +1,24 @@
+.background-img{
+    background-image: linear-gradient(to left, red , blue, yellow);
+    width: auto;
+    height: 200px;
+    margin: 0 auto;
+}
+.list-icon{
+    font-size: large;
+    color: white;
+    margin-top: -190px;
+    margin-left: 50px;
+    line-height: 1.0;
+    font-weight: 900;
+    position: relative;
+    left: 170px;
+}
+.list-icons{
+    list-style: none;
+    display: inline-block;
+    margin: 40px;
+}
+
+
+

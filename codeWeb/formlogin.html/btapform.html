@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="btapform.css">
+    <title>Các bài tập</title>
+</head>
+<body>
+    <h1>Tạo tài khoản mới</h1>
+    <p>Miẽn phí và sẽ luôn như vậy</p>
+    <form action="">
+        <div class="form">
+            <label for="firstname"></label>
+            <input type="text" id="firstname" name="firstname" placeholder="Họ" required>   
+            <label for="name"></label>
+            <input type="text" id="name" name="name" placeholder="tên" required>
+        </div>
+        <div class="form">
+            <label for="email"></label><br><br>
+            <input type="email" id="email" name="email" placeholder="Email" required>
+        </div>
+        <div class="form">
+            <label for="password"></label><br><br>
+            <input type="password" name="password" id="password" placeholder="Mật khẩu mới" required> 
+        </div>
+    <p style="font-size: x-large;">Ngày sinh</p>
+        <label for="day"></label>
+        <input type="number" name="day" id="day" max="31" min="1" step="1">
+        <label for="month"></label>
+        <select name="month" id="month">
+            <option value="">tháng 1</option>
+            <option value="">tháng 2</option>
+            <option value="">tháng 3</option>
+            <option value="">tháng 4</option>
+            <option value="">tháng 5</option>
+            <option value="">tháng 6</option>
+            <option value="">tháng 7</option>
+            <option value="">tháng 8</option>
+            <option value="">tháng 9</option>
+            <option value="">tháng 10</option>
+            <option value="">tháng 11</option>
+            <option value="">tháng 12</option>
+        </select>
+        <label for="year"></label>
+        <input type="number" name="year" id="year" max="2024" min="1900" step="1">
+       <br><br>
+        <label for="gender"></label>
+        <input type="radio" name="gender" id="gender">Nam
+        <input type="radio" name="gender" id="gender">Nữ
+        <br><br>
+        <input type="submit" value="Đăng Ký" id="register">
+    </form>
+</body>
+</html>

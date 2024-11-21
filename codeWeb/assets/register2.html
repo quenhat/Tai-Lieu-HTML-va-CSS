@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Đăng ký</title>
+    <style>
+        body{
+            background-image: linear-gradient(to right, #fc5c7d, #6a82fb);
+        }
+        .register{
+            background-image: linear-gradient(to right, #fc5c7d, #6a82fb);
+            position:absolute;
+            left:50%;
+            top: 50%;
+            transform: translate(-50% , -50%);
+        }
+        .register{
+            width: 400px;
+            height: 530px;
+            text-align: center;
+            box-shadow: 0 0 20px pink;
+            border-radius: 10px;
+        }
+        .form__input label{
+            display:flex;
+            justify-content: center;
+            line-height: 15px;
+        }
+        #submit{
+            padding:10px 20px;
+            color: #fff;
+            background: rgb(221, 77, 154);
+            border-radius: 5px;
+        }
+        .icon__link-list{
+            display: flex;
+            list-style:none;
+        }
+        .icon__link-item{
+            margin-left: 15px;
+        }
+        .icon__link-meme{
+            text-decoration:none;
+            color: white;
+        }
+        .icon__link-meme--facebook:hover{
+            color: blue;
+        }
+        .icon__link-meme--insta:hover{
+            color: orangered;
+        }
+        .icon__link-meme--google:hover{
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="register">
+        <h1>Đăng kí</h1>
+        <form action="" class="form__input">
+                    <label for="name">Họ và Tên :</label>
+                    <input type="text" id="name" name="name" required>
+                    <br><br>
+                    <label for="email">Email :</label>
+                    <input type="email" id="email" name="email" required>
+                    <br><br>
+                    <label for="password">Mật Khẩu :</label>
+                    <input type="password" id="password" name="password" required>
+                    <br><br>
+                    <label for="confirm password"> Nhập lại mật khẩu :</label>
+                    <input type="password" name="confirm password" id="confirm password" required>
+                    <br><br>
+                    <label for="number">Số điện thoại :</label>
+                    <input type="tel" id="tel" name="tel">
+                    <br><br>
+                    <label for="submit"></label>
+                    <input type="submit" value="Đăng kí" id="submit" name="submit">
+                <div class="icon__link">
+                    <ul class="icon__link-list">
+                        <li class="icon__link-item">
+                            <a href="" class="icon__link-meme icon__link-meme--facebook">
+                                <i class="fa-brands fa-facebook"></i>
+                                Facebook
+                            </a>
+                        </li>
+                        <li class="icon__link-item">
+                            <a href="" class="icon__link-meme icon__link-meme--insta">
+                                <i class="fa-brands fa-instagram"></i>
+                                Instagram
+                            </a>
+                            <span style="margin-left:5px; color: white;">or</span>
+                        </li>
+                        <li class="icon__link-item">
+                            <a href="" class="icon__link-meme icon__link-meme--google">
+                                <i class="fa-brands fa-google"></i>
+                                Google
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Flexbox.css" />
+    <title>Flex box</title>
+  </head>
+  <body>
+    <!--Flex Box
+      1 Display : flex : Biến phần tử thành 1 container linh hoạt
+      2 Flex-direction :
+       - Row : mặc định phần tử con được sắp xếp theo hàng ngang
+       - Row-Reverse : mặc định phần tử con được sắp xếp theo hàng ngang ( được đảo ngược chiều)
+       - Column : Sắp xếp theo cốt 
+       - Column-Reverse Sắp: xếp theo cột vào đảo ngược thứ tự
+      3 Flex-wrap : Quy định việc phần tử con có tự xuống dòng hay không ( thu nhỏ màn hình dần dần)
+       - Nowrap : quy định các phần tử con nằm trên 1 dòng 
+       - Wrap   : Các phần tử con xuống dòng nếu không đủ không gian
+       - Wrap-Reverse : Các phần tử con xuống dòng từ dưới lên nếu không đủ không gian
+      4 Justtify-content :
+       - Flex-start : căn về đầu ( mặc định )
+       - Flex-end   : căn về cuối 
+       - Center : căn ở giữa
+       - Space-between : phân cách đều khoảng cách ở giữa
+       - Space-evenly  : Khoảng cách đểu nhau cả giữa và ngoài 
+       - Space-around  : Khoảng cách xung quanh đều nhau
+      5 Align-items : Căn chỉnh các phần tử con theo trục chéo ( cross-axis)
+       - Stretch : Mặc định các phần tử kéo dãn phù hợp  với container
+       - Flex-start : Căn về đầu
+       - Flex-end : Căn về cuối
+       - Center : Căn giữa
+       - Baseline : Căn theo đường cơ bản của các phần tử 
+      6 Align-content : Căn chỉnh các dòng container nếu có nhiều đong ( chỉ hoạt động khi có nhiều dòng )
+       - Stretch : Mặc định các phần tử kéo dãn phù hợp  với container
+       - Flex-start : Căn về đầu
+       - Flex-end : Căn về cuối
+       - Center : Căn giữa
+       - Space-between : phân cách đều giữa các dòng
+       - Space-evenly  : Khoảng cách đểu nhau cả giữa và ngoài các dòng
+       - Space-around  : Khoảng cách xung quanh các dòng đều nhau
+      7 Item Properties (Áp dụng cho phần tử con)
+       - order: Định thứ tự sắp xếp của các phần tử con (mặc định là 0). Giá trị càng nhỏ, phần tử càng được hiển thị sớm.
+
+       - flex-grow: Xác định khả năng mở rộng của phần tử so với phần tử khác. Nếu 0, phần tử không mở rộng.
+
+       - flex-shrink: Xác định khả năng thu hẹp của phần tử khi không gian bị hạn chế. Nếu 0, phần tử không bị thu hẹp.
+
+       - flex-basis: Đặt kích thước cơ sở của phần tử trước khi chia không gian. Có thể đặt auto, %, hoặc px.
+
+       - align-self: Căn chỉnh phần tử cụ thể theo trục chéo, ghi đè align-items.
+
+       - auto: Theo align-items của container.
+       - flex-start, flex-end, center, baseline, stretch: Tương tự như align-items.
+       * cú pháp short hand Flex * Việc kết hợp 3 thuộc tính này giúp bạn dễ dàng kiểm soát không gian của các phần tử con trong container flex.
+       Flex : 1 0 100px ; (grow , shrink , basis ) 
+    -->
+   <div class="nav_1">
+      <ul class="nav_list">
+        <li class="nav-item">Giới thiệu</li>
+        <li class="nav-item">Kết nối</li>
+        <li class="nav-item">Tải ứng dụng</li>
+      </ul>
+      <ul class="list-items">
+        <li class="nav-item">Đăng nhập</li>
+        <li class="nav-item">Đăng kí</li>
+      </ul>
+    </div>
+    <div class="nav__2">
+        <div class="nav__form">
+            <form action="">
+              <div class="form-row">
+                <label for="name" class="label">Name :</label>
+                <input type="text" id="name" name="name" class="form_input">
+              </div>
+              <div class="form-row" >
+                <label for="password" class="label">Password :</label>
+                <input type="password" id="password" name="password"class="form_input">
+              </div>
+            </form>
+        </div>
+    </div>
+    <div class="nav__3">
+      <div class="nav__text-1 column">
+        <h2>Introduce yourself</h2>
+        <p>I am Nguyen Que Nhat , you can call me alex I am from Ha Noi which is in the capital of Viet nam. In viet nam , this country have a lot of cusine for  instance pho , banh mi , bun cha or banh cuon . Addition to, Ha noi 
+          has many beautiful scenes for example : Hồ Gươm , Lăng Bác and West Lake.</p>
+      </div>
+      <div class="nav__text-2 column">
+        <h2>My hometown</h2>
+        <p>
+          Quê hương luôn là nơi chứa đựng những kỷ niệm tuổi thơ đẹp đẽ, là nơi mà mỗi khi đi xa, ta luôn mong mỏi được trở về. Đó có thể là một ngôi làng nhỏ ven sông, nơi những hàng dừa nghiêng mình soi bóng, hay là cánh đồng lúa chín vàng trải dài tận chân trời. Tiếng cười nói của những đứa trẻ đuổi nhau trên con đường làng, mùi thơm của đất sau cơn mưa, hay tiếng gió vi vu qua những rặng tre già đều gợi lên trong ta cảm giác bình yên đến lạ. Dù cuộc sống có đưa ta đến bao nhiêu nơi xa lạ, quê hương vẫn mãi là nơi chốn mà trái tim ta hướng về, là nơi an ủi, chở che mỗi khi ta mỏi mệt trước cuộc sống.</p>
+      </div>
+      <div class="nav__text-3 column">
+        <h2>My favourite</h2>
+        <p>I am a football fan because football is a popular sport in the world and i admire a phayer soccer int the world . his name is Ronaldo . I often watch TV to watch the match about him He has achived many things in his life</p>
+      </div>
+    </div>
+    <div class="nav__4">
+      <div class="feature_1 padding">
+        <h2>Introduce yourself</h2>
+        <p>I am Nguyen Que Nhat , you can call me alex I am from Ha Noi which is in the capital of Viet nam. In viet nam , this country have a lot of cusine for  instance pho , banh mi , bun cha or banh cuon . Addition to, Ha noi 
+          has many beautiful scenes for example : Hồ Gươm , Lăng Bác and West Lake.</p>
+      </div>
+      <div class="feature_2 padding">
+        <h2>My hometown</h2>
+        <p>cánh đồng lúa chín vàng trải dài tận chân trời. Tiếng cười nói của những đứa trẻ đuổi nhau trên con đường làng, mùi thơm của đất sau cơn mưa, hay tiếng gió vi vu qua những rặng tre già đều gợi lên trong ta cảm giác bình yên đến lạ. Dù cuộc sống có đưa ta đến bao nhiêu nơi xa lạ, quê hương vẫn mãi là nơi chốn mà trái tim ta hướng về, là nơi an ủi, chở che mỗi khi ta mỏi mệt trước cuộc sống.</p>
+      </div>
+      <div class="feature_3 padding">
+        <h2>My favourite</h2>
+        <p>I am a football fan because football is a popular sport in the world and i admire a phayer soccer int the world . his name is Ronaldo . I often watch TV to watch the match about him He has achived many things in his life</p>
+      </div>
+    </div>
+    <div class="nav__5">
+      <div class="number">1</div>
+      <div class="number">2</div>
+      <div class="number">3</div>
+      <div class="number">4</div>
+      <div class="number">5</div>
+    </div>
+    <div class="nav_6">
+      <div class="chart_layout-items" style="--percent :10%">10%</div>
+      <div class="chart_layout-items" style="--percent :20%">20%</div>
+      <div class="chart_layout-items" style="--percent :40%">40%</div>
+      <div class="chart_layout-items" style="--percent :60%">60%</div>
+      <div class="chart_layout-items" style="--percent :98%">98%</div>
+      <div class="chart_layout-items" style="--percent :58%">58%</div>
+      <div class="chart_layout-items" style="--percent :78%">78%</div>
+    </div>
+    <div class="the__end">
+      <div class="the__end-first">
+        <p>My hometown
+          Quê hương luôn là nơi chứa đựng những kỷ niệm tuổi thơ đẹp đẽ, là nơi mà mỗi khi đi xa, ta luôn mong mỏi được trở về. Đó có thể là một ngôi làng nhỏ ven sông, nơi những hàng dừa nghiêng mình soi bóng, hay là cánh đồng lúa chín vàng trải dài tận chân trời. Tiếng cười nói của những đứa trẻ đuổi nhau trên con đường làng, mùi thơm của đất sau cơn mưa, hay tiếng gió vi vu qua những rặng tre già đều gợi lên trong ta cảm giác bình yên đến lạ. Dù cuộc sống có đưa ta đến bao nhiêu nơi xa lạ, quê hương vẫn mãi là nơi chốn mà trái tim ta hướng về, là nơi an ủi, chở che mỗi khi ta mỏi mệt trước cuộc sống.</p>
+      </div>
+      <div class="the__end-second">
+        <div class="the__end-second-one">
+          <p>I am Nguyen Que Nhat , you can call me alex I am from Ha Noi which is in the capital of Viet nam. In viet nam , this country have a lot of cusine for instance pho , banh mi , bun cha or banh cuon . Addition to, Ha noi has many beautiful scenes for example : Hồ Gươm , Lăng Bác and West Lake.</p>
+        </div>
+        <div class="the__end-second-two">
+          <p>I am a football fan because football is a popular sport in the world and i admire a phayer soccer int the world . his name is Ronaldo . I often watch TV to watch the match about him He has achived many things in his life
+
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

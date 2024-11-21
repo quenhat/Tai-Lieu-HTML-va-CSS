@@ -1,0 +1,21 @@
+#div1 p{
+    color: rgb(30, 233, 233);
+}
+/*cmt:dò tất cả thẻ "p" ở nằm trong thằng div (cha)  */
+#div1 > p{
+    color: red;
+}
+/*cmt: dấu ">" dùng để dò thằng "p" là con trực tiếp của thẻ div*/
+#div1 + p{
+    color: rgb(56, 27, 221);
+}
+/*cmt: thẻ p nằm ở sau thẻ </div> chứ không phải trong thẻ div
+cmt: thẻ p cũng có thể ở sau thẻ <span id="span1"></span> : #span1 + p {}*/
+#div2 ~ p{
+    color: rgba(181, 231, 43, 0.959);
+}
+/*cmt: span3 ( thẻ con trong div2 được tìm thấy) và sau đó "p" cùng cấp với nó sẽ được chọn */
+[class]{
+    color: blue;
+}
+/*cmt: tìm thuộc tính tring HTML có sử dụng thuộc tính class hoặc id  */

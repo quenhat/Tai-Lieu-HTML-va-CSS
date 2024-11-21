@@ -1,0 +1,71 @@
+#transition{
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+    transition: 1s; /* 1s : thời gian chung của wid và height
+                       width 1s, height 2s : thời gian riêng  */
+}
+#transition2{
+    background-color: blueviolet;
+    width: 100px;
+    height: 100px;
+    transition: all 1s linear; /* all bao gồm background-color and color*/
+}
+#transition2:hover{
+    background-color: coral;
+    color: white;
+}
+#transition:hover{
+    width: 200px;
+    height: 200px;
+}
+#Transition-ease{
+    background-color: yellow;
+    width: 100px;
+    height: 100px;
+    transition: width 1s;
+}
+#Transition-ease:hover{
+    transition-timing-function: ease;
+    width: 200px;
+}
+#Transition-linear{
+    background-color: yellow;
+    width: 100px;
+    height: 100px;
+    transition: width 1s;
+}
+#Transition-linear:hover{
+    transition-timing-function: linear;
+    width: 200px;
+}
+#Transition-ease-in{
+    background-color: yellow;
+    width: 100px;
+    height: 100px;
+    transition: width 1s;
+}
+#Transition-ease-in:hover{
+    transition-timing-function: ease-in;
+    width: 400px;
+}
+#Transition-ease-out{
+    background-color: yellow;
+    width: 100px;
+    height: 100px;
+    transition: width 1s;
+}
+#Transition-ease-out:hover{
+    transition-timing-function: ease-out;
+    width: 400px;
+}
+#Transition-ease-in-out{
+    background-color: yellow;
+    width: 100px;
+    height: 100px;
+    transition: width 1s;
+}
+#Transition-ease-in-out:hover{
+    transition-timing-function: ease-in-out;
+    width: 400px;
+}

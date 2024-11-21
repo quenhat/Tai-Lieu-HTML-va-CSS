@@ -1,0 +1,41 @@
+@charset "utf-8";
+
+#div1{
+    background-color: red;
+    width: 200px;
+    height: 500px;
+    z-index: 4;
+    position:relative;
+    left: 100px;
+   
+
+}
+#div2{
+    background-color:yellow;
+    width: 200px;
+    height: 500px;
+    z-index: 5;
+    position:absolute;
+   left: 230px;
+   top: 150px;
+   /*cmt : số index lớn hơn sẽ chèn số index thấp hơn và nó sẽ đứng ở phía sau*/
+}
+#div3{
+    background-color:blue;
+    width: 200px;
+    height: 200px;
+    z-index: 6;
+    position:fixed;
+   left: 110px;
+   top: 100px;
+   
+}
+#div4{
+    background-color:pink;
+    width: 200px;
+    height: 200px;
+    z-index: 6;
+    position:fixed;
+   left: 300px;
+   top: 300px;
+}

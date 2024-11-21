@@ -1,0 +1,49 @@
+#firstname{
+    padding-left: 9px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+#name{
+    padding-left: 9px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+#email{
+    padding-left: 9px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-right: 190px;
+}
+#password{
+    padding-left: 9px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-right: 190px;
+}
+#day{
+    padding-left: 4px;
+    padding-top: 3px;
+    padding-bottom: 2px;
+    padding-right: 4px;
+}
+#month{
+    padding-left: 4px;
+    padding-top: 3px;
+    padding-bottom: 2px;
+    padding-right: 4px;
+}
+#year{
+    padding-left: 4px;
+    padding-top: 3px;
+    padding-bottom: 2px;
+    padding-right: 4px;
+}
+#register{
+    background-color: rgb(27, 168, 27);
+    color: white;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-weight: bolder;
+}

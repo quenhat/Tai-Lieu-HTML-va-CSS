@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>Login</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <form action="">
+         <h1>Hinh thuc form HTML</h1>
+        <div class="form">
+        <label for="usename">Họ và tên </label><br>
+        <input type="text" id="usename" name="usename" required>
+        </div>
+        <div class="form">
+        <label for="password">Mật khẩu </label><br>
+        <input type="password" id="password" name="password" required>
+        </div>
+        <div class="form">
+        <label for="email">Email </label><br>
+         <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form">
+            <label for="age">Tuổi</label><br>
+            <input type="number" id="age" name="age" max="90" min="2" step="2">    <br>
+            <label for="birthday">Ngày sinh</label><br>
+            <input type="date" id="birthday" name="birthday"><br>
+            <label for="gender">Giới tính:</label>
+            <input type="radio" id="gender" name="gender" checked>Nam
+            <input type="radio" id="gender" name="gender">Nữ
+        </div>
+        <br>
+        <input type="submit" value="đăng nhập"><!--value : chữ hiện ở trong khung submit : đăng nhập-->
+        <br><br>
+        <a href="register.html">đăng kí</a>
+        <div id="major">
+            <label for="code">Ngôn ngữ yêu thích</label><br>
+            <label for="html">html</label>
+            <input type="checkbox" name="code" value="html" id="html">
+            <label for="css">css</label>
+            <input type="checkbox" name="code" value="css" id="css">
+            <label for="java">java</label>
+            <input type="checkbox" name="code" value="java" id="java">
+            <label for="React">React</label>
+            <input type="checkbox" name="code" value="react" id="react">
+        </div>
+        <br>
+        <label for="reason">Tại sao bạn lại chọn ngành này?</label><br>
+        <textarea name="reason" id="reason" cols="20" rows="10" placeholder="Tại sao bạn lại chọn ngành này?" ></textarea>
+        <div id="color">
+            <p>màu yêu thích của bạn</p>
+            <input type="color">     
+        </div>
+        <label for="mycity">Sống tại</label><br>
+        <select name="mycity" id="mycity">
+            <option value="1">Hà Nội</option>
+            <option value="2">Hải Phòng</option>
+            <option value="3">Thái Nguyên</option>
+            <option value="4">Quảng ninh</option>
+        </select>
+    </form>
+</body>    
+</html>

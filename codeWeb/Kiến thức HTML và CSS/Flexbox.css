@@ -1,0 +1,167 @@
+:root{
+    --percent :
+}
+.nav_1{
+    background-color: orangered;
+    min-height: 32%;
+    display: flex;
+    justify-content: space-between;
+}
+.nav-list{
+    padding-left: 0;
+    margin: 0 16px;
+}
+.nav-item{
+    list-style: none;
+    display: inline-block;
+    margin: 0 8px;
+    color: #fff;
+}
+/*nav__2*/
+.nav__2{
+    background-color: rgb(168, 165, 165);
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav__form{
+    background-color: #fff;
+    width: max-content;
+    padding: 50px 200px;
+}
+.form-row{
+    position: relative;
+    left: -150px;
+    display: flex;
+    padding: 8px 0;
+}
+.form-input{
+    flex: 1;
+}
+.label{
+    min-width: 90px;
+}
+/*nav__3*/
+.nav__3{
+    background-color: #fff;
+    display: flex;
+    margin: 16px 0;
+}
+.column{
+    /*Flex: 1 , 3 column có flex : 1 thì 3 kích thước đều băng nhau 
+    tính theo trục main axis*/
+    padding: 0 16px;
+}
+.nav__text-1{
+    flex: 1;
+    order: 1;
+}
+.nav__text-2{
+    flex: 3; /* nếu flex :3 thì gấp 3 lần 2 nav_text còn lại*/
+    order: 3;
+}
+.nav__text-3{
+    flex: 1;
+    order: 2;/*oder : sắp xếp các vị trí tuỳ í*/
+}
+/*Nav__4*/
+.nav__4{
+    background-color: rgb(183, 170, 170);
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+/*kích cỡ flex direction của Pc , hoặc ipad*/ /* khi thu nhỏ màn hình nó sẽ đổi thành ngang*/
+@media (min-width:740px)/*min-width : chiều rộng màn hình khi kéo đến 740px sẽ thành row*/{
+    .nav__4{
+        flex-direction: row;
+    }
+}
+.feature_1{
+    background-color: aqua;
+}
+.feature_2{
+    background-color:rgb(205, 123, 123)
+}
+.feature_3{
+    background-color: pink;
+}
+.padding{
+    padding:  20px;
+    flex-basis: 20%;/*Flex-basisi : để xét kích thước main-size ( chiêu ngang ) hoặc
+     cross-size ( chiều dọc ) 
+     chỗ này có 3 feature mỗi feature 20 % thì chiêms 60% còn thừa 40% khoẳng trống */
+    margin: 25px 0;
+}
+/*Nav_5*/
+.nav__5{
+    background-color:#fff;
+    display:flex;
+    justify-content: space-around;
+    margin: 20px 0;
+    flex-wrap: wrap;
+    /*Flex-wrap
+     1  wrap: Nếu các phần tử con không vừa trong một hàng, chúng sẽ tự động bọc xuống hàng tiếp theo.
+     2  nowrap (giá trị mặc định): Các phần tử con sẽ nằm trên cùng một hàng và không bọc xuống, dù có thể bị thu nhỏ lại để vừa trong container.
+     3  wrap-reverse: Giống như wrap, nhưng các hàng mới sẽ được bọc ngược lại (từ dưới lên trên thay vì từ trên xuống dưới).*/
+}
+.number{
+    background-color: orangered;
+    width: 148px;
+    height: 90px;
+    margin: auto 0; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: bolder;
+    font-size: xx-large;
+}
+/*nav_6*/
+.nav_6{
+    background-color:#49f5a5 ;
+    height: 320px;
+    padding: 0 ;
+    margin: 36px auto 0 auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+.chart_layout-items{
+    background-color: orangered;
+    width: 60px;
+    height:var(--percent);
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+}
+.the__end{
+    display: flex;
+    position: relative;
+    left: 50%;
+    bottom: 50%;
+    transform: translate(-30% , 10% );
+    
+}
+.the__end-first{
+    background-color: aliceblue;
+    padding: 20px;
+    max-width: 400px;
+}
+.the__end-second{
+    display: flex;
+    flex-direction: column;
+   
+}
+.the__end-second-one{
+    background-color: aquamarine;
+    padding: 20px;
+    max-width: 400px;
+}
+.the__end-second-two{
+    background-color: #c6ed5b;
+    padding: 20px;
+    max-width: 400px;
+}

@@ -1,0 +1,340 @@
+.header {
+  background-image: linear-gradient(0, #fe6433, #f53e2d);
+  height: var(--header-height);
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+.nav__list {
+  padding-left: 0;
+}
+.nav__list-item {
+  margin: 0 8px;
+  position: relative;
+}
+.nav__list-item,
+.nav__list-link {
+  list-style: none;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: var(--white-color);
+  font-weight: 300;
+}
+.nav__link-icon {
+  color: #fff;
+}
+.nav__link-icon--bell,
+.nav__link-icon--help {
+  color: #fff;
+  margin-right: -10px;
+}
+.nav__list-item:hover,
+.nav__list-link:hover,
+.nav__link-icon:hover {
+  color: rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+}
+.nav__list-item--bold {
+  font-weight: 500;
+}
+.nav__list--separate::after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-left: 2px solid #fb9086;
+  height: 15px;
+  right: -9px;
+  top: 0;
+}
+.nav__list--margin {
+  margin-left: 2px;
+}
+/*Nav__qr , apps , chplay*/
+.nav__qr {
+  position: absolute;
+  width: 186px;
+  background-color: var(--white-color);
+  top: 120%;
+  left: 0;
+  padding: 8px;
+  border-radius: 2px;
+  display: none;
+  animation: fadeIn ease 1s;
+}
+/*khi ta hover vào vào cửa hàng ứng dụng tickID và di chuột xuống mã qr
+  nó sẽ có 1 khoảng cách ( trống ) từ vào cửa hàng ứng dụng tickID đến mã qr
+  khi di chuột xuống mã sẽ bị mất
+  - vì vậy ta cần viết code để khi hover di chuột xuống dưới mà mã qr vẫn xuất hiện
+*/
+.nav__qr::before {
+  content: "";
+  height: 12px;
+  position: absolute;
+  left: 0;
+  top: -12px;
+  width: 100%;
+  display: block;
+}
+.nav__list-qr-display:hover .nav__qr {
+  display: block;
+}
+.nav__qr-img {
+  width: 100%;
+}
+.nav__apps {
+  display: flex;
+}
+.nav__apps-link-chplay,
+.nav__apps-link-store {
+  height: 16px;
+  margin-left: 11px;
+  margin-right: 0px;
+}
+
+/*header notifycation*/
+.nav__notify{
+  position: absolute;
+  width: 404px;
+  top: 130%;
+  background-color: var(--white-color);
+  right: 0;
+  border: 1px solid rgb(196, 195, 195);
+  cursor: default;
+  transform-origin: calc(100% - 20px) top;
+  transition: headernotify ease-in 0.25s;
+  display: none;
+  z-index: 2;
+}
+.nav__notify::before{
+  content: "";
+  position:absolute;
+  border: 20px solid;
+  right: 4px;
+  top: -27px;
+  border-color: transparent transparent var(--white-color) transparent;
+}
+.nav__notify::after{
+  content: "";
+  position: absolute;
+  width: 400px;
+  height: 20px;
+  top: -7%;
+  right: 0%;
+}
+@keyframes headernotify{
+  from {
+    opacity: 0;
+    transform: scale(0);
+  }
+  to{
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.nav__list-item--hover:hover .nav__notify{
+  display: block;
+}
+.nav__notify-header {
+  background-color: var(--white-color);
+  height: 40px;
+  cursor: text;
+}
+.nav__notify-header h3{
+  color: rgb(128, 123, 123);
+  font-weight: 300;
+  margin: 0 0 0 12px;
+  font-size: 1.3rem;
+  line-height: 40px;/*bằng chiều cao với thằng chứa nó là nav__notify-header*/
+}
+.nav__notify-list{
+  padding-left: 0;
+}
+.nav__notify-item{
+  display: flex;
+}
+.nav__notify-item:hover{
+  background-color: rgb(206, 200, 200);
+  
+}
+.nav__notify-link{
+  display: flex;
+  width: 100%;
+  text-decoration: none;
+  background-color: rgba(243, 191, 186, 0.5);
+}
+
+.nav__notify-img{
+  width: 48px;
+  margin-top: -16px;
+  object-fit: contain;
+
+}
+
+.nav__notify-infor-name{
+  color: var(--black-color);
+  font-weight: 400;
+}
+.nav__notify-infor-discription{
+  color: var(--text-color);
+  font-size: 12px;
+}
+.footer__item{
+  display: flex;
+}
+.footer__item-link{
+  text-decoration: none;
+  padding: 10px 16px;
+  color: var(--text-color);
+  margin: 0 auto;
+}
+ /* Authen modal*/
+ .auth-form{
+  width: 500px;
+  background-color: var(--white-color);
+ }
+ .auth-form__container{
+  padding: 0 32px;
+ }
+.auth-form__header{
+  display: flex;
+  align-items:center;
+  justify-content: space-between;
+  padding: 0 12px;
+}
+.auth-form__heading{
+  font-size: 2.2rem;
+  font-weight: 400;
+  color: var(--black-color);
+}
+.auth-form__switch-btn{
+  font-size: 1.6rem;
+  color: orangered;
+  font-weight: 400;
+  cursor: pointer;
+}
+.auth-form__input{
+  width: 100%;
+  height: 40px;
+  text-indent: 15px;
+  margin-top: 16px;
+  font-size: 1.4rem;
+  border: 1px solid #bdbdbd;
+  outline: none;
+}
+.auth-form__aside{
+  margin-top: 18px;
+}
+.auth-form__policy-link{
+  text-decoration: none;
+  color: var(--text-color);
+  line-height: 1.5;
+  
+}
+.auth-form__poicy-text{
+  font-size: 1.3rem;
+  font-weight: 400;
+  text-align: center;
+}
+.auth-form__controls{
+  margin-top: 80px;
+  border: none;
+  outline: none;
+  border-radius: 2px;
+  display: flex;
+  justify-content: flex-end;
+}
+.auth-form__controls-back{
+  margin-right: 8px;
+  background-color:rgb(255, 255, 255);
+}
+.auth-form__controls-back:hover{
+  background-color: rgba(0, 0, 0, 0.05);
+}
+.auth-form__socials{
+  background-color: #dfdede;
+  padding: 16px 32px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 32px;
+
+}
+.auth-form__socials-icons{
+  font-size: 1.8rem;
+}
+
+.auth-form__socials--facebook{
+  background-color: #3a5a98;
+  color: var(--white-color);
+  margin-left: -10px;
+  margin-right: 10px;
+}
+.auth-form__socials--facebook
+.auth-form__socials-icons{
+  color: var(--white-color);
+}
+.auth-form__socials-title{
+  margin: 0 36px;
+}
+.auth-form__socials--google{
+  background-color:var(--white-color);
+}
+
+.auth-form__help {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 1.6rem;
+
+}
+.auth-form__help-link{
+  text-decoration: none;
+  color: #939393;
+}
+.auth-form__help-separate{
+  display: block;
+  height: 20px;
+  border-left: 1px solid rgb(184, 183, 183) ;
+  margin-top: -2px;
+  margin-left:16px ;
+  margin-right: 16px;
+}
+.auth-form__help-forgot{
+  color: var(--text-color);
+}
+/* header with search */
+.header-with-search{
+  height: var( --header-with-search-height);
+  display: flex;
+  align-items: center;
+}
+.header__logo{
+  width: 300px;
+}
+.header__logo-img{
+  width: 100px;
+  height: 90px;
+  object-fit: contain;
+}
+.header__logo-img-name {
+  font-size: xx-large;
+  position: relative;
+  top: -35px;
+  font-weight: 500px;
+}
+.header__search{
+  flex: 1;
+  height: 50px;
+  background-color: var(--white-color);
+  border-radius: 5px;
+
+}
+.header__cart{
+  width: 300px;
+  text-align: center;
+}
+.header__cart-icon{
+  font-size: 2.4rem;
+  color: var(--white-color);
+
+}

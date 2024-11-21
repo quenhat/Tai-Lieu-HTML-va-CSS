@@ -1,0 +1,15 @@
+:root{
+    --text-color: red
+}
+/* : root đặt biến toàn cục ( global )
+   - sử đụng được mọi nơi trong Css*/
+h1{
+
+    color: var(--text-color);
+}
+h2{
+    color: var(--text-color);
+}
+h3{
+    color: var(--text-color);
+}

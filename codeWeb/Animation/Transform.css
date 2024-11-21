@@ -1,0 +1,42 @@
+#transform-translate{
+    background-color: orangered;
+    height: 100px;
+    width: 100px;
+    transition: 2s;
+}
+#transform-translate:hover{
+    transform: translate(100px, 50px);
+    /* sang phải 100px xuống dưới 50px*/
+}
+#transform-rotate{
+    background-color: yellow;
+    width: 90px;
+    height: 90px;
+    text-align: center;
+    transition: 1s linear;
+}
+#transform-rotate:hover{
+    transform: rotate(360deg);
+    width: 150px;
+    height: 150px;
+}
+#transform-scale{
+    background-color: gray;
+    width: 100px;
+    height: 100px;
+    transition: 2s;
+    text-align: center;
+}
+#transform-scale:hover{
+    transform: scale(2, 2);
+}
+#transform-skew{
+    background-color: gray;
+    width: 100px;
+    height: 100px;
+    transition: 2s;
+    text-align: center;
+}
+#transform-skew:hover{
+    transform: skew(20deg , 30deg);
+}

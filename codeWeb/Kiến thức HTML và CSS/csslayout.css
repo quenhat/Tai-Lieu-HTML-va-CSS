@@ -1,0 +1,57 @@
+body{
+    margin: 0;
+}
+#panel{
+    width: 400px;
+    border: 3px solid black;
+    margin: 70px 0px 0px 70px;
+    outline: 2px solid blue;
+}
+#float{
+    height: 80px;
+    width: 50px;
+    background-color: aqua;
+    float: right;
+}
+#panel1{
+    width: 400px;
+    border: 1px solid black;
+    margin: 70px 0px 0px 70px;
+    max-height: 10px;
+    overflow: hidden; /* overflow: hidden; Nội dung nằm ngoaif khung chứa sẽ bị ẩn đi
+                         overflow: visible; vẫn hiện thị nội dung khi bị tràn */
+}
+#float1{
+    height: 80px;
+    width: 50px;
+    background-color: aqua;
+    float: right;
+    clear: both;
+}#panel2{
+    width: 400px;
+    border: 1px solid black;
+    margin: 70px 0px 0px 70px;
+    max-height: 70px;
+    overflow-x: scroll; /*overflow: scroll; nó sẽ tạo 2 thanh cuộn dọc và ngang*/
+}
+#float2{
+    height: 80px;
+    width: 50px;
+    background-color: aqua;
+    float: right;
+}
+#clear3{
+    clear: both;
+}
+#clear2{
+    clear: both;
+
+}
+#img{
+    height: 100px;
+    float: right;
+}
+#img2{
+    height: 100px;
+    float: left;
+}

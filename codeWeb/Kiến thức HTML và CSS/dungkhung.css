@@ -1,0 +1,26 @@
+.header{
+    background-image: linear-gradient(0, rgb(237, 95, 52), rgb(244, 96, 43));
+    height: 120px;
+}.header__navbar{
+    display: flex;  
+    justify-content: space-between;
+}
+.header__navbar-list{
+    list-style: none;
+    font-size: small;
+    
+}
+.header__navbar-items{
+    display: inline-block;
+    margin: 0 8px;
+}
+.header__navbar-items,
+.header__navbar-link{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 1.0rem;
+    font-weight: 300;
+}
+.header__navbar-items--bold{
+    font-weight: 400;
+}
